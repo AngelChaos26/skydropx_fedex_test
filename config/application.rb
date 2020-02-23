@@ -17,21 +17,8 @@ Bundler.require(*Rails.groups)
 # load `.env` variables to `ENV`
 Dotenv::Railtie.load
 
-module Telecomm
+module Fedex
   class Application < Rails::Application
-    # load
-    config.autoload_paths << Rails.root.join('lib', 'pbx')
-    config.autoload_paths << Rails.root.join('lib', 'payu')
-    config.autoload_paths << Rails.root.join('lib', 'freshdesk')
-    config.autoload_paths << Rails.root.join('lib','facturacom')
-    config.autoload_paths << Rails.root.join('lib', 'zoho')
-    config.autoload_paths << Rails.root.join('lib', 'leads_api')
-    config.eager_load_paths << Rails.root.join('lib', 'pbx')
-    config.eager_load_paths << Rails.root.join('lib', 'payu')
-    config.eager_load_paths << Rails.root.join('lib', 'freshdesk')
-    config.eager_load_paths << Rails.root.join('lib','facturacom')
-    config.eager_load_paths << Rails.root.join('lib', 'zoho')
-    config.eager_load_paths << Rails.root.join('lib', 'leads_api')
     # Initialize configuration defaults for originally generated Rails version.
 
     # Initialize Timezone
