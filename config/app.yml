@@ -1,0 +1,16 @@
+# config/app.yml for rails-settings-cached
+defaults: &defaults
+  click_to_call_color: 'red'
+  click_to_call_position: 'right'
+
+development:
+  <<: *defaults
+
+stage:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

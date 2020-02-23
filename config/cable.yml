@@ -1,0 +1,13 @@
+# default configuration
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  adapter: test
+
+stage:
+  <<: *default

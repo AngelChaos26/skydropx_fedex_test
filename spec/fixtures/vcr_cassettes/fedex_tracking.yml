@@ -1,0 +1,567 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>149331877648230</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:54 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:54 GMT
+      X-Csr-Log-Transaction-Id:
+      - eb03131e-b370-43e1-9245-1555714f41a5
+      X-Csr-Elapsed-Millis:
+      - '239'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>149331877648230</TrackingNumber><TrackingNumberUniqueIdentifier>12013~149331877648230~FDEG</TrackingNumberUniqueIdentifier><StatusCode>AP</StatusCode><StatusDescription>At
+        Pickup</StatusDescription><ServiceCommitMessage>No scheduled delivery date
+        available at this time.</ServiceCommitMessage><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>149331877648230</Value><Type>GROUND_SHIPMENT_ID</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Home Delivery</ServiceInfo><ServiceType>GROUND_HOME_DELIVERY</ServiceType><PackageWeight><Units>LB</Units><Value>9.5</Value></PackageWeight><PackageDimensions><Length>24</Length><Width>16</Width><Height>7</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>Mt.
+        Crawford</City><StateOrProvinceCode>VA</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>FISHERSVILLE</City><StateOrProvinceCode>VA</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>Marion</City><StateOrProvinceCode>NC</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2014-01-03T19:54:00-05:00</Timestamp><EventType>IP</EventType><EventDescription>In
+        FedEx possession</EventDescription><StatusExceptionCode>084</StatusExceptionCode><StatusExceptionDescription>Tendered
+        at FedEx location</StatusExceptionDescription><Address><City>HAGERSTOWN</City><StateOrProvinceCode>MD</StateOrProvinceCode><PostalCode>21740</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_OFFICE_LOCATION</ArrivalLocation></Events><Events><Timestamp>2014-01-02T06:07:00-05:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>22841</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:54 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>449044304137821</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:55 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:55 GMT
+      X-Csr-Log-Transaction-Id:
+      - 045b8b3c-71b5-4949-8256-955371da42c5
+      X-Csr-Elapsed-Millis:
+      - '182'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>449044304137821</TrackingNumber><TrackingNumberUniqueIdentifier>12013~449044304137821~FDEG</TrackingNumberUniqueIdentifier><StatusCode>OC</StatusCode><StatusDescription>Shipment
+        information sent to FedEx</StatusDescription><ServiceCommitMessage>Shipping
+        label has been created. The status will be updated when shipment begins to
+        travel.</ServiceCommitMessage><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>115380173</Value><Type>CUSTOMER_REFERENCE</Type></OtherIdentifiers><OtherIdentifiers><Value>DMWsGWdnN</Value><Type>GROUND_SHIPMENT_ID</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Home Delivery</ServiceInfo><ServiceType>GROUND_HOME_DELIVERY</ServiceType><PackageWeight><Units>LB</Units><Value>3.0</Value></PackageWeight><PackageDimensions><Length>14</Length><Width>11</Width><Height>5</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>JEFFERSONVILLE</City><StateOrProvinceCode>IN</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>JEFFERSONVILLE</City><StateOrProvinceCode>IN</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>Miami</City><StateOrProvinceCode>FL</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2013-12-30T13:24:00-05:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>471307761</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:55 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>920241085725456</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:55 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:55 GMT
+      X-Csr-Log-Transaction-Id:
+      - 0dc6fc97-18a2-427a-bcce-54712d0b785c
+      X-Csr-Elapsed-Millis:
+      - '162'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>920241085725456</TrackingNumber><TrackingNumberUniqueIdentifier>12013~920241085725456~FDEG</TrackingNumberUniqueIdentifier><StatusCode>FD</StatusCode><StatusDescription>At
+        FedEx destination facility</StatusDescription><ServiceCommitMessage>No scheduled
+        delivery date available at this time.</ServiceCommitMessage><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>920241085725456</Value><Type>GROUND_SHIPMENT_ID</Type></OtherIdentifiers><OtherIdentifiers><Value>0014243047/34684523</Value><Type>CUSTOMER_REFERENCE</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Home Delivery</ServiceInfo><ServiceType>GROUND_HOME_DELIVERY</ServiceType><PackageWeight><Units>LB</Units><Value>7.8</Value></PackageWeight><PackageDimensions><Length>21</Length><Width>15</Width><Height>5</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>HIGH
+        POINT</City><StateOrProvinceCode>NC</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>KERNERSVILLE</City><StateOrProvinceCode>NC</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>NEW
+        CASTLE</City><StateOrProvinceCode>DE</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2014-01-07T06:07:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>At
+        local FedEx facility</EventDescription><Address><City>NEW CASTLE</City><StateOrProvinceCode>DE</StateOrProvinceCode><PostalCode>19720</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>DESTINATION_FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-06T22:50:12-05:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>LEWISBERRY</City><StateOrProvinceCode>PA</StateOrProvinceCode><PostalCode>17339</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-06T15:26:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>LEWISBERRY</City><StateOrProvinceCode>PA</StateOrProvinceCode><PostalCode>17339</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-04T07:24:02-05:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>KERNERSVILLE</City><StateOrProvinceCode>NC</StateOrProvinceCode><PostalCode>27284</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-03T17:09:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>KERNERSVILLE</City><StateOrProvinceCode>NC</StateOrProvinceCode><PostalCode>27284</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-02T22:48:00-05:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>27260</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events><Events><Timestamp>2014-01-03T00:00:00</Timestamp><EventType>PU</EventType><EventDescription>Picked
+        up</EventDescription><Address><City>KERNERSVILLE</City><StateOrProvinceCode>NC</StateOrProvinceCode><PostalCode>27284</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>PICKUP_LOCATION</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:55 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>568838414941</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:56 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:56 GMT
+      X-Csr-Log-Transaction-Id:
+      - 02ab154b-cac8-4f26-b834-80e38529fc99
+      X-Csr-Elapsed-Millis:
+      - '1121'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>FAILURE</HighestSeverity><Notifications><Severity>FAILURE</Severity><Source>trck</Source><Code>9045</Code><Message>Sorry,
+        we are unable to process your tracking request. Please retry later or contact
+        Customer Service at 001.800.Go.FedEx(R) 800.463.3339.</Message><LocalizedMessage>Sorry,
+        we are unable to process your tracking request. Please retry later or contact
+        Customer Service at 001.800.Go.FedEx(R) 800.463.3339.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:57 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>039813852990618</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:58 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:58 GMT
+      X-Csr-Log-Transaction-Id:
+      - 258d2497-c1c4-4bc6-b7d5-c94c725a571a
+      X-Csr-Elapsed-Millis:
+      - '175'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>039813852990618</TrackingNumber><TrackingNumberUniqueIdentifier>12013~039813852990618~FDEG</TrackingNumberUniqueIdentifier><StatusCode>DP</StatusCode><StatusDescription>Departed
+        FedEx location</StatusDescription><ServiceCommitMessage>No scheduled delivery
+        date available at this time.</ServiceCommitMessage><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>4631962</Value><Type>CUSTOMER_REFERENCE</Type></OtherIdentifiers><OtherIdentifiers><Value>McGee</Value><Type>DEPARTMENT</Type></OtherIdentifiers><OtherIdentifiers><Value>3385158</Value><Type>PURCHASE_ORDER</Type></OtherIdentifiers><OtherIdentifiers><Value>THE
+        HOUSE</Value><Type>GROUND_SHIPMENT_ID</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Home Delivery</ServiceInfo><ServiceType>GROUND_HOME_DELIVERY</ServiceType><PackageWeight><Units>LB</Units><Value>5.3</Value></PackageWeight><PackageDimensions><Length>15</Length><Width>10</Width><Height>7</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>SAINT
+        PAUL</City><StateOrProvinceCode>MN</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>SAINT
+        PAUL</City><StateOrProvinceCode>MN</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>PRINCETON</City><StateOrProvinceCode>WV</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2014-01-07T04:11:05-06:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>SAINT PAUL</City><StateOrProvinceCode>MN</StateOrProvinceCode><PostalCode>55115</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-07T00:37:00-06:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>SAINT PAUL</City><StateOrProvinceCode>MN</StateOrProvinceCode><PostalCode>55115</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-06T18:41:00-06:00</Timestamp><EventType>PU</EventType><EventDescription>Picked
+        up</EventDescription><Address><City>SAINT PAUL</City><StateOrProvinceCode>MN</StateOrProvinceCode><PostalCode>55115</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>PICKUP_LOCATION</ArrivalLocation></Events><Events><Timestamp>2014-01-05T14:40:00-06:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>55117</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:58 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>231300687629630</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:51:59 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:51:59 GMT
+      X-Csr-Log-Transaction-Id:
+      - 7fea120b-b56a-4c82-b0c7-bcd0ac0d2cb7
+      X-Csr-Elapsed-Millis:
+      - '488'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>231300687629630</TrackingNumber><TrackingNumberUniqueIdentifier>12013~231300687629630~FDEG</TrackingNumberUniqueIdentifier><StatusCode>OD</StatusCode><StatusDescription>On
+        FedEx vehicle for delivery</StatusDescription><ServiceCommitMessage>No scheduled
+        delivery date available at this time.</ServiceCommitMessage><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>231300687629630</Value><Type>GROUND_SHIPMENT_ID</Type></OtherIdentifiers><OtherIdentifiers><Value>6228334</Value><Type>PURCHASE_ORDER</Type></OtherIdentifiers><OtherIdentifiers><Value>W62283340102</Value><Type>CUSTOMER_REFERENCE</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Home Delivery</ServiceInfo><ServiceType>GROUND_HOME_DELIVERY</ServiceType><PackageWeight><Units>LB</Units><Value>1.0</Value></PackageWeight><PackageDimensions><Length>10</Length><Width>6</Width><Height>6</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>Wichita</City><StateOrProvinceCode>KS</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>WICHITA</City><StateOrProvinceCode>KS</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>MIAMI</City><StateOrProvinceCode>FL</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><SignatureProofOfDeliveryAvailable>false</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2014-01-04T06:55:00-05:00</Timestamp><EventType>OD</EventType><EventDescription>On
+        FedEx vehicle for delivery</EventDescription><Address><City>MIAMI</City><StateOrProvinceCode>FL</StateOrProvinceCode><PostalCode>33178</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>VEHICLE</ArrivalLocation></Events><Events><Timestamp>2014-01-04T05:10:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>MIAMI</City><StateOrProvinceCode>FL</StateOrProvinceCode><PostalCode>33178</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-04T05:08:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>At
+        local FedEx facility</EventDescription><Address><City>MIAMI</City><StateOrProvinceCode>FL</StateOrProvinceCode><PostalCode>33178</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>DESTINATION_FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-04T00:11:19-05:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>ORLANDO</City><StateOrProvinceCode>FL</StateOrProvinceCode><PostalCode>32809</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-03T15:04:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>ORLANDO</City><StateOrProvinceCode>FL</StateOrProvinceCode><PostalCode>32809</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-02T08:28:56-06:00</Timestamp><EventType>IT</EventType><EventDescription>In
+        transit</EventDescription><Address><City>KANSAS CITY</City><StateOrProvinceCode>MO</StateOrProvinceCode><PostalCode>64161</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-02T07:21:15-06:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>LENEXA</City><StateOrProvinceCode>KS</StateOrProvinceCode><PostalCode>66227</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-02T02:03:00-06:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>LENEXA</City><StateOrProvinceCode>KS</StateOrProvinceCode><PostalCode>66227</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2013-12-31T18:08:00-06:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>WICHITA</City><StateOrProvinceCode>KS</StateOrProvinceCode><PostalCode>67226</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2013-12-31T15:21:00-06:00</Timestamp><EventType>PU</EventType><EventDescription>Picked
+        up</EventDescription><Address><City>WICHITA</City><StateOrProvinceCode>KS</StateOrProvinceCode><PostalCode>67226</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>PICKUP_LOCATION</ArrivalLocation></Events><Events><Timestamp>2013-12-31T12:58:00-06:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>67226</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:15:59 GMT
+- request:
+    method: post
+    uri: https://wsbeta.fedex.com/xml/
+    body:
+      encoding: UTF-8
+      string: |-
+        <TrackRequest xmlns="http://fedex.com/ws/track/v6">
+          <WebAuthenticationDetail>
+            <UserCredential>
+              <Key>O21wEWKhdDn2SYyb</Key>
+              <Password>db0SYxXWWh0bgRSN7Ikg9Vunz</Password>
+            </UserCredential>
+          </WebAuthenticationDetail>
+          <ClientDetail>
+            <AccountNumber>510087780</AccountNumber>
+            <MeterNumber>119009727</MeterNumber>
+            <Localization>
+              <LanguageCode>en</LanguageCode>
+              <LocaleCode>us</LocaleCode>
+            </Localization>
+          </ClientDetail>
+          <Version>
+            <ServiceId>trck</ServiceId>
+            <Major>6</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+          </Version>
+          <PackageIdentifier>
+            <Value>122816215025810</Value>
+            <Type>TRACKING_NUMBER_OR_DOORTAG</Type>
+          </PackageIdentifier>
+          <IncludeDetailedScans>true</IncludeDetailedScans>
+        </TrackRequest>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Feb 2020 17:52:00 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - siteDC=edc; path=/; domain=.fedex.com; expires=Mon, 24-Feb-2020 17:52:00 GMT
+      X-Csr-Log-Transaction-Id:
+      - d160d75f-c543-418b-95ec-353fb5e6d93f
+      X-Csr-Elapsed-Millis:
+      - '245'
+      Vary:
+      - Accept-Encoding
+      Responsesslprotocol:
+      - TLSv1.2
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/xml
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><TrackReply xmlns="http://fedex.com/ws/track/v6"><HighestSeverity>SUCCESS</HighestSeverity><Notifications><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notifications><Version><ServiceId>trck</ServiceId><Major>6</Major><Intermediate>0</Intermediate><Minor>0</Minor></Version><DuplicateWaybill>false</DuplicateWaybill><MoreData>false</MoreData><TrackDetails><Notification><Severity>SUCCESS</Severity><Source>trck</Source><Code>0</Code><Message>Request
+        was successfully processed.</Message><LocalizedMessage>Request was successfully
+        processed.</LocalizedMessage></Notification><TrackingNumber>122816215025810</TrackingNumber><TrackingNumberUniqueIdentifier>12013~122816215025810~FDEG</TrackingNumberUniqueIdentifier><StatusCode>DL</StatusCode><StatusDescription>Delivered</StatusDescription><CarrierCode>FDXG</CarrierCode><OtherIdentifiers><Value>PO#174724</Value><Type>CUSTOMER_REFERENCE</Type></OtherIdentifiers><ServiceInfo>FedEx
+        Ground</ServiceInfo><ServiceType>FEDEX_GROUND</ServiceType><PackageWeight><Units>LB</Units><Value>21.5</Value></PackageWeight><PackageDimensions><Length>22</Length><Width>17</Width><Height>10</Height><Units>IN</Units></PackageDimensions><Packaging>Package</Packaging><PackagingType>YOUR_PACKAGING</PackagingType><PackageSequenceNumber>1</PackageSequenceNumber><PackageCount>1</PackageCount><ShipperAddress><City>POST
+        FALLS</City><StateOrProvinceCode>ID</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ShipperAddress><OriginLocationAddress><City>SPOKANE</City><StateOrProvinceCode>WA</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></OriginLocationAddress><ShipTimestamp>2018-08-15T00:00:00</ShipTimestamp><DestinationAddress><City>NORTON</City><StateOrProvinceCode>VA</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></DestinationAddress><ActualDeliveryTimestamp>2014-01-09T13:31:00-05:00</ActualDeliveryTimestamp><ActualDeliveryAddress><City>Norton</City><StateOrProvinceCode>VA</StateOrProvinceCode><CountryCode>US</CountryCode><Residential>false</Residential></ActualDeliveryAddress><DeliveryLocationType>SHIPPING_RECEIVING</DeliveryLocationType><DeliveryLocationDescription>Shipping/Receiving</DeliveryLocationDescription><DeliverySignatureName>ROLLINS</DeliverySignatureName><SignatureProofOfDeliveryAvailable>true</SignatureProofOfDeliveryAvailable><RedirectToHoldEligibility>INELIGIBLE</RedirectToHoldEligibility><Events><Timestamp>2014-01-09T13:31:00-05:00</Timestamp><EventType>DL</EventType><EventDescription>Delivered</EventDescription><Address><City>Norton</City><StateOrProvinceCode>VA</StateOrProvinceCode><PostalCode>24273</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>DELIVERY_LOCATION</ArrivalLocation></Events><Events><Timestamp>2014-01-09T04:18:00-05:00</Timestamp><EventType>OD</EventType><EventDescription>On
+        FedEx vehicle for delivery</EventDescription><Address><City>KINGSPORT</City><StateOrProvinceCode>TN</StateOrProvinceCode><PostalCode>37663</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>VEHICLE</ArrivalLocation></Events><Events><Timestamp>2014-01-09T04:09:00-05:00</Timestamp><EventType>AR</EventType><EventDescription>At
+        local FedEx facility</EventDescription><Address><City>KINGSPORT</City><StateOrProvinceCode>TN</StateOrProvinceCode><PostalCode>37663</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>DESTINATION_FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-08T23:26:00-05:00</Timestamp><EventType>IT</EventType><EventDescription>In
+        transit</EventDescription><Address><City>KNOXVILLE</City><StateOrProvinceCode>TN</StateOrProvinceCode><PostalCode>37921</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-08T18:14:07-06:00</Timestamp><EventType>DP</EventType><EventDescription>Departed
+        FedEx location</EventDescription><Address><City>NASHVILLE</City><StateOrProvinceCode>TN</StateOrProvinceCode><PostalCode>37207</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-08T15:16:00-06:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>NASHVILLE</City><StateOrProvinceCode>TN</StateOrProvinceCode><PostalCode>37207</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-07T00:29:00-06:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>CHICAGO</City><StateOrProvinceCode>IL</StateOrProvinceCode><PostalCode>60638</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-03T19:12:30-08:00</Timestamp><EventType>DP</EventType><EventDescription>Left
+        FedEx origin facility</EventDescription><Address><City>SPOKANE</City><StateOrProvinceCode>WA</StateOrProvinceCode><PostalCode>99216</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>ORIGIN_FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-03T18:33:00-08:00</Timestamp><EventType>AR</EventType><EventDescription>Arrived
+        at FedEx location</EventDescription><Address><City>SPOKANE</City><StateOrProvinceCode>WA</StateOrProvinceCode><PostalCode>99216</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>FEDEX_FACILITY</ArrivalLocation></Events><Events><Timestamp>2014-01-03T15:00:00-08:00</Timestamp><EventType>PU</EventType><EventDescription>Picked
+        up</EventDescription><Address><City>SPOKANE</City><StateOrProvinceCode>WA</StateOrProvinceCode><PostalCode>99216</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>PICKUP_LOCATION</ArrivalLocation></Events><Events><Timestamp>2014-01-03T14:31:00-08:00</Timestamp><EventType>OC</EventType><EventDescription>Shipment
+        information sent to FedEx</EventDescription><Address><PostalCode>83854</PostalCode><CountryCode>US</CountryCode><Residential>false</Residential></Address><ArrivalLocation>CUSTOMER</ArrivalLocation></Events></TrackDetails></TrackReply>
+    http_version: 
+  recorded_at: Sun, 23 Feb 2020 08:16:00 GMT
+recorded_with: VCR 3.0.3
